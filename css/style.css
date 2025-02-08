@@ -51,68 +51,74 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 /* General styles */
 .certificate {
     min-height: 1300px;
-    width: 900px;
-    /* background-image: url('../images/certificate.jpg');    */
+    width: 1000px;
+    background-image: url('../images/certificate.jpeg');   
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;   
     border: 2px solid #000;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px;
+    padding: 22px;
+    position: relative;
 }
 
-.certificate-content {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    padding: 100px;
+.certificate-content .name {
+    position: absolute;
+    top: 35%;
+    left: 25%;
 }
 
-.certificate-content p {
-    margin: 10px 0;
+.certificate-content .fname {
+    position: absolute;
+    top: 39%;
+    left: 24%;
 }
 
-.footer {
-    font-size: 16px;
-    margin-top: 30px;
+.certificate-content .dob{
+    position: absolute;
+    top: 39%;
+    left: 66%;
+}
+.certificate-content .level {
+    position: absolute;
+    top: 43.5%;
+    left: 34%;
+}
+.certificate-content .age{
+    position: absolute;
+    top: 43.5%;
+    left: 71%;
+}
+.certificate-content .event{
+    position: absolute;
+    top: 48%;
+    left: 12%;
+}
+.certificate-content .position{
+    position: absolute;
+    top: 48%;
+    left: 52%;
 }
 
-.footer p {
-    margin: 5px 0;
-}
+.certificate-content .certi{
+    position: absolute;
+    top: 24%;
+    left: 15%;
 
-strong {
-    font-weight: bold;
 }
-
-/* Print-specific styles */
-@media print {
-    .certificate {
-        width: 100%;
-        padding: 40px;
-        box-shadow: none;
-        border: none;
-    }
-    .footer {
-        text-align: left;
-    }
-    .certificate-content {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+.profile-pic {
+    height: 157px;
+    width: 128px;
+    position: absolute;
+    top: 19%;
+    left: 80%;
 }
-
-/* Additional improvements (e.g., centering footer content) */
-.footer p {
-    text-align: center;
-    font-size: 14px;
+.profile-pic img{
+    height:100%;
+    width:100%;
 }
 
 /* certificate end */
