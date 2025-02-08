@@ -113,7 +113,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="idcard.php">
+                        <a href="certificate.php">
                             <i class="la la-keyboard-o"></i>
                             <p>Certificate </p>
                         </a>

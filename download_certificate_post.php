@@ -5,25 +5,23 @@ if (!$conn) {
     echo json_encode(["status" => "error", "message" => "Database connection failed."]);
     exit;
 }
-$phone = mysqli_real_escape_string($conn, $_POST['phone']);
-$dob = mysqli_real_escape_string($conn, $_POST['dob']);
-if (empty($phone) || empty($dob)) {
-    echo json_encode(["status" => "error", "message" => "Both fields are required."]);
+$certificate_number = mysqli_real_escape_string($conn, $_POST['certificate_number']);
+if (empty($certificate_number)) {
+    echo json_encode(["status" => "error", "message" => "Certificate Number fields are required."]);
     exit;
 }
-$sql = "SELECT * FROM id_card WHERE phone = '$phone'";
+$sql = "SELECT * FROM certificate WHERE certificate_number = '$certificate_number'";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     $user = mysqli_fetch_assoc($result);
-    if ($dob == $user['dob'] && $user['status']=='approved') {
+    if ($user['status']=='approved') {
         $_SESSION['user_id'] = $user['id'];
-        $_SESSION['user_email'] = $user['email'];
-        echo json_encode(["status" => "success", "message" => "Login successful!"]);
+        echo json_encode(["status" => "success", "message" => "Certificate Generate successful!"]);
     } else {
-        echo json_encode(["status" => "error", "message" => "Incorrect DOB or Your Id Card Not Approved."]);
+        echo json_encode(["status" => "error", "message" => "Incorrect Certificate number or Your Certificate Not Approved."]);
     }
 } else {
-    echo json_encode(["status" => "error", "message" => "User not found."]);
+    echo json_encode(["status" => "error", "message" => "Certificate not found."]);
 }
 mysqli_close($conn);
 ?>

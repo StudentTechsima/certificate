@@ -9,7 +9,7 @@ include 'layout/header.php';
             <form id="idCardForm">
                 <div class="mb-3">
                     <label for="certificate" class="form-label">Certificate No:</label>
-                    <input type="text" id="certificate" name="certificate" class="form-control" placeholder="Certificate number">
+                    <input type="text" id="certificate_number" name="certificate_number" class="form-control" placeholder="Certificate number">
                 </div>                
                 <div class="d-grid">
                     <button type="submit" class="btn btn-success  text-uppercase">Download Now</button>
@@ -26,7 +26,7 @@ include 'layout/header.php';
                 event.preventDefault();
                 $('#message').html('');
                 $.ajax({
-                    url: 'download_id_post.php',
+                    url: 'download_certificate_post.php',
                     type: 'POST',
                     data: $(this).serialize(),
                     success: function (response) {
@@ -34,7 +34,7 @@ include 'layout/header.php';
                             let result = JSON.parse(response);
                             if (result.status === "success") {
                                 $('#message').html('<div class="alert alert-success">' + result.message + '</div>');
-                                window.location.href = 'id_card.php';
+                                window.location.href = 'certificate.php';
                             } else {
                                 $('#message').html('<div class="alert alert-danger">' + result.message + '</div>');
                             }

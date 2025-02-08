@@ -41,7 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && (isset($_POST['signup']) || isset($_
                 $final = "Email already registered to another user.";
             } else {
                 if (!empty($password)) {
-                    // $hashed_password = $password;
                     $update_sql = "UPDATE users SET name='$name', email='$email', password='$password', phone='$phone' WHERE id='$user_id'";
                 } else {
                     $update_sql = "UPDATE users SET name='$name', email='$email', phone='$phone',role='$role' WHERE id='$user_id'";

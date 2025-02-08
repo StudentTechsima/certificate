@@ -8,7 +8,7 @@ include 'layout/header.php';
                 <div class="row">
                 <div class="col-md-6 mb-3">
                         <label for="c_number" class="form-label">Certificate Number *</label>
-                        <input type="text" id="c_number" name="c_number" class="form-control">
+                        <input type="text" id="certificate_number" name="certificate_number" class="form-control">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="name" class="form-label">Name*</label>
@@ -16,7 +16,7 @@ include 'layout/header.php';
                     </div>
                     <div class="col-md-6  mb-3">
                         <label for="f_name" class="form-label">Father's Name*</label>
-                        <input type="text" id="f_name" name="f_name" class="form-control" >
+                        <input type="text" id="father_name" name="father_name" class="form-control" >
                     </div>
                     <div class="col-md-6  mb-3">
                         <label for="dob" class="form-label">Date Of Birth*</label>
@@ -25,22 +25,22 @@ include 'layout/header.php';
                     <div class="col-md-6  mb-3">
                         <label for="level" class="form-label">Level*</label>
                         <select id="level" name="level" class="form-select form-control " >
-                            <option value="lavel">District Lavel</option>
-                            <option value="lavel">State Lavel</option>
-                            <option value="lavel">National Lavel</option>
-                            <option value="lavel">International  Lavel</option>
+                            <option value="District Level">District Lavel</option>
+                            <option value="State Level">State Lavel</option>
+                            <option value="National Lavel">National Lavel</option>
+                            <option value="International Lavel">International Lavel</option>
                         </select>
                     </div>
                     <div class="col-md-6  mb-3">
                         <label for="game" class="form-label">Games*</label>
-                        <input type="text" id="game" name="game" class="form-control">
+                        <input type="text" id="games" name="games" class="form-control">
                     </div>
                     <div class="col-md-6  mb-3">
                         <label for="position" class="form-label">Position*</label>
                         <select id="position" name="position" class="form-select form-control " >
-                            <option value="lavel"> Gold</option>
-                            <option value="lavel">Silver</option>
-                            <option value="lavel">Bronze</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Bronze">Bronze</option>
                         </select>
                     </div>
                     <div class="col-md-6  mb-3">
@@ -49,12 +49,12 @@ include 'layout/header.php';
                     </div>
                     <div class="col-md-6  mb-3">
                         <label for="aadhar" class="form-label">Aadhar Number*</label>
-                        <input type="text" id="aadhar" name="aadhar" class="form-control" >
+                        <input type="text" id="aadhaar" name="aadhaar" class="form-control" >
                     </div>
                     
                     <div class="col-md-6  mb-3">
                         <label for="participate" class="form-label">Participate Championship *</label>
-                        <input type="text" id="address" name="participate" class="form-control"  >
+                        <input type="text" id="participate" name="participate" class="form-control"  >
                     </div>                                 
                 <div class="col-md-6  mb-3">
                     <label for="profile-image" class="form-label">Profile Picture* </label>
