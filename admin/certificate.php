@@ -4,7 +4,7 @@ include 'layout/header.php';
 <div class="main-panel"   style="overflow:auto">
     <div class="content">
         <div class="container-fluid" >
-            <h4 class="page-title">Id Cards</h4>
+            <h4 class="page-title">Certificate</h4>
                 <table class="table  table-striped border border-4">
                     <thead>
                         <tr>
