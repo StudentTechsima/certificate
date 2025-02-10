@@ -37,22 +37,11 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
     border: 5px solid #000;
     margin:0px auto;
 }
-/* .certificate{
-    background-image: url('../images/certificate.jpg');
-    min-height:900px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
-/* certificate start  */
-/* General styles */
 .certificate {
     min-height: 1300px;
     width: 1000px;
-    background-image: url('../images/certificate.jpeg');   
+    background-image: url('../images/certificate.png');   
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -121,104 +110,7 @@ h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
     width:100%;
 }
 
-/* certificate end */
-/* .outer .inner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.outer .inner .logo {
-    width: 200px;
-}
-
-.outer .inner .logo img {
-    width: 100%;
-    height: 100%;
-}
-
-.outer .inner .text {
-    width: 100%;
-    margin-left: 35px;
-}
-
-.outer .text h1 {
-    color: #741b16;
-    font-size: 24px;
-}
-
-.outer .text h3 {
-    font-size: 25px;
-    word-spacing: 12px;
-    line-height: 27px;
-}
-
-.outer .text .para1 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #741b16;
-    text-align: center;
-}
-
-.outer .para {
-    margin-top: -9px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #741b16;
-    text-align: center;
-}
-
-.outer .img-box {
-    width: 150px;
-    height: 180px;
-    border: 5px solid #741b16;
-    border-radius: 20px;
-    margin: 0px auto;
-    padding: 5px;
-
-}
-
-.outer .img-box img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-}
-.outer ul li {
-    list-style: none;
-    line-height: 28px;
-    padding:0px 20px;
-    font-weight: 600;
-}
-.outer ul li span{
-    color: #741b16;
-    font-size:18px;
-    padding-right:10px;
-}
-
-.outer .sign {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0px;
-}
-
-.outer .sign p {
-    font-weight: 600;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration:underline;
-
-}
-.outer .details-heading{
-    font-size:24px;
-    color:#741b16;
-    text-align:center;
-    padding:10px 0px;
-    text-decoration:underline;
-    
-} */
- #pdf-content.container{
+#pdf-content.container{
     max-width: 800px;
     min-height: 400px;
     background: white;
